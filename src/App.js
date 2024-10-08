@@ -6,12 +6,14 @@ import InteractivePage from "./components/InteractivePage";
 import PlainPage from "./components/PlainPage";
 import './styles/App.css';
 import { ThemeProvider } from './utils/ThemeContext'; // Import the ThemeProvider
+import { ScrollToTop } from './utils/scrollToTop';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
         <div className="App">
+          <ScrollToTop/>
           {/* Navigation Bar */}
           {/* <nav>
             <div className="nav-left">
@@ -35,7 +37,7 @@ function App() {
             <Route path="/interactive" element={<InteractivePage />} />
             <Route path="/plain" element={<PlainPage />} />
           </Routes>
-          
+
         </div>
       </Router>
     </ThemeProvider>

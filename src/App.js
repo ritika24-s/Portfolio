@@ -13,7 +13,7 @@ function App() {
       <Router>
         <div className="App">
           {/* Navigation Bar */}
-          <nav>
+          {/* <nav>
             <div className="nav-left">
               <a href="/">Home</a>
               <a href="/interactive">Interactive</a>
@@ -27,15 +27,15 @@ function App() {
               <a href="mailto:youremail@gmail.com">Gmail</a>
               <a href="#" id="download-resume">Download Resume</a>
             </div>
-          </nav>
+          </nav> */}
 
           {/* Route Configurations */}
-          
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/interactive" element={<InteractivePage />} />
             <Route path="/plain" element={<PlainPage />} />
           </Routes>
+          
         </div>
       </Router>
     </ThemeProvider>

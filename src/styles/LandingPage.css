@@ -1,0 +1,143 @@
+/* Landing Page Enhanced Style */
+.landing-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://source.unsplash.com/featured/?technology'); /* Example Unsplash tech-themed background */
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.5s ease;
+}
+
+/* Light Theme */
+.landing-page.light {
+  background-color: #f4f4f4; /* Light background */
+}
+
+.landing-page.light .overlay {
+  background-color: rgba(255, 255, 255, 0.9); /* Lighter overlay */
+  color: black;
+}
+
+/* Dark Theme */
+.landing-page.dark {
+  background-color: #333; /* Dark background */
+}
+
+.landing-page.dark .overlay {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+  color: white;
+}
+
+.overlay {
+  padding: 50px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.landing-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* Button Styling */
+.landing-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.interactive-btn {
+  background-color: #ff7f50; /* Coral */
+}
+
+.plain-btn {
+  background-color: #6495ed; /* Cornflower Blue */
+}
+
+.dont-care-btn {
+  background-color: #48d1cc; /* Medium Turquoise */
+}
+
+/* Hover Effects */
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle Theme Button */
+.toggle-theme-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-theme-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .landing-title {
+    font-size: 2.5rem;
+  }
+
+  .landing-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

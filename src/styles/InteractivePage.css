@@ -1,0 +1,25 @@
+.interactive-page {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .milestone-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 50px); /* 10 columns, each 50px wide */
+    grid-template-rows: repeat(10, 50px); /* 10 rows, each 50px high */
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    margin: 40px auto;
+  }
+  
+  .milestone-pin {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .milestone-pin:hover {
+    transform: scale(1.3);
+  }
+  
